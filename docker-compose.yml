@@ -1,0 +1,11 @@
+services:
+  kanban-front:
+    build:
+      dockerfile: C:\projects\WebProjects\mono-repo\Dockerfile
+      context: C:\projects\WebProjects\mono-repo\
+      args:
+        - KANBAN_API_URI=${KANBAN_API_URI}
+    ports:
+      - 8000:80
+    env_file:
+      - ".env"
