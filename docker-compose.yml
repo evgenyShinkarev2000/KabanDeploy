@@ -5,6 +5,8 @@ services:
       context: C:\projects\WebProjects\mono-repo\
       args:
         - KANBAN_API_URI=${KANBAN_API_URI}
+        - GANT_API_URI=${GANT_API_URI}
+        - GRADE_API_URI=${GRADE_API_URI}
     ports:
       - 8000:80
     env_file:
